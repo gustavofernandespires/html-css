@@ -1,0 +1,26 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: #1f1e1e;
+    margin: 0px;
+    padding: 10px;
+    font-size: 14pt;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30pt;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 23pt;
+    color: #333;
+}
+
+img#foto-perfil {
+    width: 160px;
+    height: 160px;
+    border-radius: 80%;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
