@@ -4,6 +4,7 @@
 
 * {
     margin: 0px;
+    padding: 0px;
     line-height: 2em;
 }
 
@@ -60,25 +61,31 @@ section {
     font-size: 3.5vw;
 }
 
+section > p {
+    padding-bottom: 1em;
+}
+
+section.imagem {
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.404);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 section.imagem > p{
     color: var(--cor02);
-    background-color: rgba(0, 0, 0, 0.438);
-    width: 43%;
+    background-color: rgba(0, 0, 0, 0.466);
+    display: inline-block;
+    padding: 5px;
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.521);
 }
 
-#img01 {
+section#img01 {
     background-image: url('../imagens/background001.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    background-position: right center;
 }
 
-#img02 {
+section#img02 {
     background-image: url('../imagens/background002.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
 }
 
 footer {
