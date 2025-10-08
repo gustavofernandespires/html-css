@@ -19,7 +19,6 @@ body {
     font: normal 1em var(--fonte03);
     background-color: white;
     border: 1px solid black;
-    margin: 0px;
 }
 
 header {
@@ -37,14 +36,19 @@ header h1 {
 
 header p {
     font: normal 1em Verdana, sans-serif;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
-header a {
+header a, footer a {
     color: var(--cor02);
     font-weight: bold;
     text-decoration: none;
     font-size: 1em;
+}
+
+header a:hover, footer a:hover {
+    color: var(--cor02);
+    text-decoration: underline;
 }
 
 section {
@@ -56,7 +60,7 @@ section {
     font-size: 3.5vw;
 }
 
-.imagem > p{
+section.imagem > p{
     color: var(--cor02);
     background-color: rgba(0, 0, 0, 0.438);
     width: 43%;
@@ -81,12 +85,5 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 1em;
-    
-}
-
-footer a {
-    color: var(--cor02);
-    font-weight: bold;
-    text-decoration: none;
+    padding: 10px;
 }
