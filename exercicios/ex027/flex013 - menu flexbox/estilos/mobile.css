@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+
+#burguer {
+    display: block;
+    z-index: 1001;
+    position: relative;
+}
+
+header {
+    position: relative;
+}
+
+header > h1 {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+
+header > nav {
+    display: none;
+    flex-flow: column nowrap;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: gray;
+    z-index: 1000;
+}
+
+header > nav.ativo {
+    display: flex !important;
+    }
+
+header > nav > a {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}

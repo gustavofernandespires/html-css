@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Flexbox</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mobile.css" media="screen and (max-width: 600px)">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
-        <nav>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <nav id="itens">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
@@ -22,6 +25,24 @@
         <h1>Teste de Flexbox</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestias exercitationem quasi rerum ratione fugiat, quidem veritatis, dicta, iure porro numquam rem maiores nostrum. Aut quisquam dolores aperiam recusandae dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis aliquam nulla tenetur, maxime, eligendi modi ad accusantium magni enim assumenda laborum officiis voluptas inventore saepe quas fuga itaque eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cum perspiciatis totam eaque nobis aut ex corrupti ullam quas, ratione, aliquam harum reprehenderit! Debitis eaque et illum commodi voluptatibus praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio doloribus expedita impedit quasi, magni dicta inventore eaque dolores, autem sed laborum facilis! Vel nihil molestiae repellendus sequi aperiam beatae sint.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quam corrupti ipsa quaerat, maxime non eveniet dolor qui possimus laborum doloremque, est assumenda soluta quibusdam et aperiam delectus sequi placeat? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente pariatur tempora voluptatem ab, ipsum nisi eligendi accusamus tenetur magni. Atque molestiae at perferendis maiores sunt perspiciatis error magnam esse voluptate!</p>
+        
+        <script>
+            const itens = document.getElementById('itens');
+            
+            function mudouTamanho() {
+                if (window.innerWidth >= 600) {
+                    itens.classList.remove('ativo');
+                }
+            }
+
+            function clickMenu() {
+                if (itens.classList.contains('ativo')) {
+                    itens.classList.remove('ativo');
+                } else {
+                    itens.classList.add('ativo');
+                }
+            }
+        </script>
     </main>
 </body>
 </html>
